@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- TableLayout의 단점을 개선한 GridLayout(격자 배치)   -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="horizontal"
+        android:columnCount="3">
+
+        <!-- width,height은 자동 wrap_content : 생략가능 -->
+        <Button android:text="1"/>
+        <Button android:text="2"/>
+        <Button android:text="3"/>
+        <Button android:text="4"/>
+        <Button android:text="5"/>
+        <Button android:text="6" android:layout_width="200dp"/>
+
+        <!-- 칸 위치를 지정할 수도 있음. -->
+        <Button android:text="7" android:layout_column="1"/>
+        <Button android:text="8" android:layout_column="0"/>
+
+        <!-- 줄, 칸 위치 모두를 지정할 수 도 있음. -->
+        <Button android:text="9999999999999" android:layout_row="3" android:layout_column="2"/>
+
+        <!-- 줄, 칸을 지정하면 겹치게 배치도 가능함  -->
+        <Button android:text="10" android:layout_row="3" android:layout_column="2"/>
+
+        <!-- 칸 병합 : 사이즈는 같이 커지지 않음. 대신 그 만큼의 공간만 차지함 -->
+        <Button android:text="11" android:layout_columnSpan="2" android:layout_gravity="fill_horizontal"/>
+
+        <!-- 줄 병합 -->
+        <Button android:text="aa" android:layout_rowSpan="2" android:layout_gravity="fill_vertical"/>
+
+        <Button android:text="button"/>
+        <Button android:text="button"/>
+        <Button android:text="button"/>
+        <Button android:text="button"/>
+    </GridLayout>
+
+    <!-- 칸의 너비를 균등하게.. -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:columnCount="3">
+
+        <Button android:layout_columnWeight="1" android:layout_margin="2dp"/>
+        <Button android:layout_columnWeight="1" android:layout_margin="2dp"/>
+        <Button android:layout_columnWeight="1" android:layout_margin="2dp"/>
+
+        <Button android:layout_columnWeight="1" android:layout_margin="2dp"/>
+        <Button android:layout_columnWeight="1" android:layout_margin="2dp"/>
+        <Button android:layout_columnWeight="1" android:layout_margin="2dp"/>
+
+    </GridLayout>
+
+
+</RelativeLayout>

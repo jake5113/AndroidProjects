@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_aa"
+        android:icon="@drawable/ic_action_share"
+        android:title="share" />
+    <!--액션모드는 icon이 우선됨. showAsAction 속성 필요없음 : never는 안됨-->
+
+    <item
+        android:id="@+id/menu_bb"
+        android:title="map"
+        android:icon="@drawable/ic_action_map" />
+
+
+</menu>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Ex23Spinner</string>
+    <string name="prompt">도시명</string>
+</resources>
