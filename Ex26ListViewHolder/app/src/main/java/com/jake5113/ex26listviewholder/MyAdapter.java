@@ -44,7 +44,7 @@ public class MyAdapter extends BaseAdapter {
             convertView = inflater.inflate(R.layout.listview_item, parent, false);
 
 
-            // 만들어진 뷰(view) 안에 있는 자식
+            // 만들어진 뷰(view) 안에 있는 자식 TODO
             ViewHolder holder = new ViewHolder(convertView);
             convertView.setTag(holder);
         }
