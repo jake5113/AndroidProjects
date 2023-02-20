@@ -36,8 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 tran.add(R.id.container_fragment, new MyFragment());
 
                 // 뒤로가기 버튼 눌렀을때 프레그먼트 추가 이전 상태로 돌아가려면..
-                tran.addToBackStack(null);+
-
+                tran.addToBackStack(null);
                 // 작업완료!!
                 tran.commit();
 
