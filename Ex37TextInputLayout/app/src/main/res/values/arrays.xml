@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cities">
+        <item>seoul</item>
+        <item>newyork</item>
+        <item>paris</item>
+        <item>sydney</item>
+        <item>london</item>
+        <item>tokyo</item>
+
+    </string-array>
+
+</resources>
