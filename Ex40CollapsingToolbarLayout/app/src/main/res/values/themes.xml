@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Ex40CollapsingToolbarLayout" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!--AppBarLayout만의 스타일 테마-->
+    <style name="appbar">
+        <!--Toolbar만 있었을때 제목색상-->
+        <item name="titleTextColor">@color/white</item>
+
+        <!--AppBarLayout 안에 툴바를 넣었을때 제목색상-->
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+
+<!--옵션메뉴 아이템의 글씨 색상-->
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>

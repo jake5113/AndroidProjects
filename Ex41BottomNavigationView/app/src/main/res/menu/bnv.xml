@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--BottomNavigationView 는 최대 5개까지만 메뉴아이템이 가능함-->
+    <!--권장 3~5-->
+    <item
+        android:id="@+id/bnv_tab1"
+        android:title="tab1"
+        android:icon="@drawable/ic_action_fav"/>
+    <item
+        android:id="@+id/bnv_tab2"
+        android:icon="@drawable/ic_action_home"
+        android:title="tab2" />
+
+    <item
+        android:icon="@drawable/ic_action_account"
+        android:id="@+id/bnv_tab3"
+        android:title="tab3" />
+
+</menu>
