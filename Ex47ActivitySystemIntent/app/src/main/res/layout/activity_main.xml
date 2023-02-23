@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="다이얼" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="짧은 문자(SMS) 화면" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="웹페이지 화면" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="카메라 화면" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:text="button"
+        android:background="@drawable/bg_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ToggleButton
+        android:background="@drawable/bg_fav"
+        android:textOn=""
+        android:textOff=""
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+</LinearLayout>
