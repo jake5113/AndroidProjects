@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<movies>
+    <item>
+        <no>1</no>
+        <title>Alien</title>
+        <genre>SF, ACTION, ADVENTURE</genre>
+    </item>
+    <item>
+        <no>2</no>
+        <title>AVATAR</title>
+        <genre>SF, ACTION, ADVENTURE</genre>
+    </item>
+    <item>
+        <no>3</no>
+        <title>Notting Hill</title>
+        <genre>ROMANCE, MELO</genre>
+    </item>
+    <item>
+        <no>4</no>
+        <title>Nightmare</title>
+        <genre>HORROR, THRILLER</genre>
+    </item>
+</movies>
