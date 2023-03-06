@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+    <!--아래쪽 탭 버튼 뷰-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemTextColor="@color/bnv_item_color"
+        app:itemIconTint="@color/bnv_item_color"
+        app:labelVisibilityMode="selected"
+        app:menu="@menu/bnv" />
 
     <!--프레그먼트가 놓여질 뷰그룹-->
     <FrameLayout
@@ -16,14 +25,5 @@
 
     </FrameLayout>
 
-    <!--아래쪽 탭 버튼 뷰-->
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bnv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:itemTextColor="@color/bnv_item_color"
-        app:itemIconTint="@color/bnv_item_color"
-        app:labelVisibilityMode="selected"
-        app:menu="@menu/bnv" />
 
 </LinearLayout>

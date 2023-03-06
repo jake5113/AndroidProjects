@@ -21,6 +21,15 @@
           </Key>
         </deviceKey>
       </Target>
+      <Target>
+        <type value="RUNNING_DEVICE_TARGET" />
+        <deviceKey>
+          <Key>
+            <type value="SERIAL_NUMBER" />
+            <value value="adb-R3CW207QFNB-xBIGuK._adb-tls-connect._tcp" />
+          </Key>
+        </deviceKey>
+      </Target>
     </runningDeviceTargetsSelectedWithDialog>
   </component>
 </project>
