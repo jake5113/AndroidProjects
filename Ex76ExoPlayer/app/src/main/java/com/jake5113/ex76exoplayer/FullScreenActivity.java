@@ -52,7 +52,7 @@ public class FullScreenActivity extends AppCompatActivity {
             @Override
             public void onSystemUiVisibilityChange(int visibility) {
                 if ((visibility & View.SYSTEM_UI_FLAG_FULLSCREEN) == 0) {
-                  // TODO:
+                  // TODO: 네비게이션 바 다시 나오기 FLAG & 다시 숨기기
                 } else {
 
                 }
