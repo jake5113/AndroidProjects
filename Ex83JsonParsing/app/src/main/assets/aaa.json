@@ -1,0 +1,9 @@
+{
+  "name": "sam",
+  "msg": "Hello world",
+  "age": 20,
+  "address": {
+    "nation": "korea",
+    "city": "seoul"
+  }
+}
