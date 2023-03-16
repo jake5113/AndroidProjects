@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "843040550685",
+    "project_id": "ex88firebasestoragejake",
+    "storage_bucket": "ex88firebasestoragejake.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:843040550685:android:4cc2850d9aeea70b9f7bf4",
+        "android_client_info": {
+          "package_name": "com.jake5113.ex88firebasestorage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "843040550685-9rtir14f2gr1omm7d6u65o991dv0e2cb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA97S-8Jc0kMGIlouIayux8PNF5jStey-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "843040550685-9rtir14f2gr1omm7d6u65o991dv0e2cb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
