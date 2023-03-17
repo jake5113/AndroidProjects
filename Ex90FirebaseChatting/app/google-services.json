@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "252220378088",
+    "project_id": "ex90firechattingjake",
+    "storage_bucket": "ex90firechattingjake.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252220378088:android:82f91778ebe321e271725d",
+        "android_client_info": {
+          "package_name": "com.jake5113.ex90firebasechatting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252220378088-ccu24940s4ddgo669cej8mal8gdlvaae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-z1oPErkoZt4cOql3lUNxmCyQITaBv_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "252220378088-ccu24940s4ddgo669cej8mal8gdlvaae.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

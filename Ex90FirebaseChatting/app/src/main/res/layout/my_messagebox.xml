@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    tools:viewBindingIgnore="true">
+    <!--바인딩 클래스가 생성되지 않음-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@id/civ"
+        android:text="nick name"
+        android:textColor="@color/purple_500" />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_alignRight="@id/tv_name"
+        android:background="@drawable/bg_mymsgbox"
+        android:maxWidth="250dp"
+        android:padding="12dp"
+        android:text="Hello message"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_msg"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@id/tv_msg"
+        android:text="14:53"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

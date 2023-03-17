@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "243747309588",
+    "project_id": "ex89firebasefirestoredbjake",
+    "storage_bucket": "ex89firebasefirestoredbjake.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243747309588:android:74fc981eb14d9574157f01",
+        "android_client_info": {
+          "package_name": "com.jake5113.ex89firebasefirestoredb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243747309588-tdh3jhvd57hnvsblgjaf3uss83u5jjj7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZIq5seLgJKSqRU7sOj57mWbPYLG0BBBs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243747309588-tdh3jhvd57hnvsblgjaf3uss83u5jjj7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
