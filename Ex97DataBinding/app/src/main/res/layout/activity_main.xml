@@ -67,8 +67,49 @@
             android:text="toggle favorite" />
 
         <!--EditText의 글씨를 제어하기-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter text"
+            android:inputType="text"
+            android:onTextChanged="@{user::onTextChange}" />
 
-        <!--기본속성으로 지정이 불가한 data binding 대응-->
+        <!--EditText의 글씨가 변경될때 마다 그 글씩를 보여주는 텍스트 뷰-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@{user.message}"
+            android:textColor="@color/black" />
+
+        <!--EditText의 글씨를 버튼이 클릭되면 텍스트뷰에 보여주기-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="입력하세요"
+            android:inputType="text"
+            android:onTextChanged="@{(s,start,end,count)->user.changeInputValue(s)}" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{v->user.clickBtn()}"
+            android:text="작성 완료" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@{user.value}"
+            android:textColor="@color/black" />
+
+        <!-- Fragment에서 데이터 바인딩 && 기본속성으로 지정이 불가한 data binding 대응-->
+        <fragment
+            android:id="@+id/frag"
+            android:name="com.jake5113.ex97databinding.MyFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_my" />
 
 
     </LinearLayout>
