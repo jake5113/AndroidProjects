@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <!-- 1. 레이아웃 xml에서 사용할 데이터 변수  -->
+    <data>
+        <variable
+            name="vm"
+            type="com.mrhi2023.ex98databindingbindingadapter.MyViewModel" />
+    </data>
+
+    <!-- 2. 화면 UI layout  -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <!-- 1) 서버 URL 데이터와 바인딩 하는 이미지뷰 -->
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:imageUrl="@{vm.img}"/>
+        <!-- src 속성은 res폴더 안에 있는 이미지만 보여줄 수 있음. -->
+        <!-- 대부분의 이미지는 서버에 있는 경우가 많기에 src속성 사용이 불가능 -->
+        <!-- data binding을 하려면 xml의 속성으로 변수와 연결해야 함. -->
+        <!-- 하지만 ImageView 에는 URL 을 설정하는 속성이 기본적으로는 제공되지 않음. -->
+        <!-- 개발자가 원하는 속성을 직접 만들수 있는 문법이 존재함 : @BindingAdapter 라고 부름  -->
+        <!-- 바인딩아탑터를 설정하는 클래스를 정의하기   -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="change image"
+            android:onClick="@{v->vm.changeImage()}"/>
+
+        <!-- 2) 리사이클러뷰에 대량의 데이터(List or Array) 바인딩 하는 custom 속성 지정 -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="vertical"
+            app:itemList="@{vm.items}"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add item"
+            android:onClick="@{v->vm.addItem()}"/>
+
+    </LinearLayout>
+
+</layout>

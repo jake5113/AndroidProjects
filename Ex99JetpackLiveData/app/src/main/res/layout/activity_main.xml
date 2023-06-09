@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="vm"
+            type="com.mrhi2023.ex99jetpacklivedata.MyViewModel" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+        
+        <!-- 1. LiveData 연습용 실습 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:text="@{vm.name}"
+            android:id="@+id/tv"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:text="@{String.valueOf(vm.age)}"/>
+
+        <!-- 1.1 버튼클릭으로 데이터 변경 및 화면자동 갱신 -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="change name"
+            android:onClick="@{(v)->vm.changeName()}"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="increase age"
+            android:backgroundTint="@color/teal_700"
+            android:onClick="@{v->vm.increaseAge()}"/>
+
+        <!--2) 리사이클러 뷰 - 데이터를 속성으로 지정해야 하지만 없기에 새로운 속성을 만들어야 함. @BindingAdapter 문법 -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="vertical"
+            app:itemList="@{vm.items}"/>
+
+        <!--2.1) 아이템 추가 버튼 -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="add item"
+            android:onClick="@{v->vm.addItem()}"/>
+        
+    </LinearLayout>   
+</layout>
+
